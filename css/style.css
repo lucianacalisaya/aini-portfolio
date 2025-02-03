@@ -11,31 +11,31 @@
 
 @font-face {
   font-family: 'Typewriter';
-  src: url(/assets/fonts/jmh_typewriter/JMH-Typewriter.ttf); }
+  src: url(../assets/fonts/jmh_typewriter/JMH-Typewriter.ttf); }
 
 @font-face {
   font-family: 'Bubble';
-  src: url(/assets/fonts/bubble1/bubble.ttf); }
+  src: url(../assets/fonts/bubble1/bubble.ttf); }
 
 @font-face {
   font-family: 'Daily Bubble';
-  src: url(/assets/fonts/daily_bubble/daily-bubble.ttf); }
+  src: url(../assets/fonts/daily_bubble/daily-bubble.ttf); }
 
 @font-face {
   font-family: 'Mostera';
-  src: url(/assets/fonts/Mostera/Mostera-Regular.otf); }
+  src: url(../assets/fonts/Mostera/Mostera-Regular.otf); }
 
 @font-face {
   font-family: 'Shine Bubble';
-  src: url(/assets/fonts/shine_bubble/shine-bubble.ttf); }
+  src: url(../assets/fonts/shine_bubble/shine-bubble.ttf); }
 
 @font-face {
   font-family: 'Some Bubbles';
-  src: url(/assets/fonts/some_bubbles/some-bubbles.ttf); }
+  src: url(../assets/fonts/some_bubbles/some-bubbles.ttf); }
 
 @font-face {
   font-family: 'Stora';
-  src: url(/assets/fonts/stora/Stora.woff); }
+  src: url(../assets/fonts/stora/Stora.woff); }
 
 html {
   scroll-snap-type: y mandatory; }
@@ -114,7 +114,7 @@ a {
         transition: all 0.2s ease-in-out; }
 
 .introduction {
-  background-image: url(/assets/resources/shiny-stars.png);
+  background-image: url(../assets/resources/shiny-stars.png);
   background-size: 12%;
   background-repeat: no-repeat;
   background-position: right top; }
@@ -273,7 +273,7 @@ a {
     height: 100%;
     padding: 0 5%; }
   .experience-translator {
-    background-image: url(/assets/resources/translator.jpg);
+    background-image: url(../assets/resources/translator.jpg);
     height: 16rem;
     background-size: cover;
     padding: 6rem 2rem 0 2rem;
@@ -318,7 +318,7 @@ a {
 .more {
   display: flex;
   padding: 0 10%;
-  background-image: url(/assets/resources/corkboard.jpg);
+  background-image: url(../assets/resources/corkboard.jpg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat; }
@@ -336,7 +336,7 @@ a {
     .more-left .diary-animation.show {
       transform: scale(1) translate(-12%, 9%) rotate(-20deg); }
   .more-title-container {
-    background-image: url(/assets/resources/diary.png);
+    background-image: url(../assets/resources/diary.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -351,7 +351,7 @@ a {
     font-size: 3vw;
     margin-bottom: 4%; }
   .more-playlists {
-    background-image: url(/assets/resources/paper-with-clip.png);
+    background-image: url(../assets/resources/paper-with-clip.png);
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -383,7 +383,7 @@ a {
     font-family: "Hi Melody", serif;
     font-size: 2vw; }
   .more-hobbies {
-    background-image: url(/assets/resources/ripped-paper-no-stripes.png);
+    background-image: url(../assets/resources/ripped-paper-no-stripes.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -406,7 +406,7 @@ a {
       display: flex;
       flex-direction: column;
       position: relative;
-      background-image: url(/assets/resources/rectangle-paper.png);
+      background-image: url(../assets/resources/rectangle-paper.png);
       background-size: contain;
       background-repeat: no-repeat;
       transform: translate(-12%) rotate(-3deg);
@@ -452,7 +452,7 @@ a {
     width: 33%; }
     .more-right-stars {
       width: 192%;
-      background-image: url(/assets/resources/ripped-paper.png);
+      background-image: url(../assets/resources/ripped-paper.png);
       background-size: contain;
       background-repeat: no-repeat;
       height: 62vh;
@@ -472,7 +472,7 @@ a {
       .more-right-stars .flip.show {
         transform: scale(1) rotate(226deg); }
     .more-right-languages {
-      background-image: url(/assets/resources/squared-blue-paper.png);
+      background-image: url(../assets/resources/squared-blue-paper.png);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -503,7 +503,7 @@ a {
         width: 100%; }
 
 .project {
-  background-image: url(/assets/resources/my-work.png);
+  background-image: url(../assets/resources/my-work.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 3%; }
@@ -512,7 +512,7 @@ a {
     flex-wrap: wrap; }
   .project-left {
     padding: 3% 6%;
-    background-image: url(/assets/resources/paper-cells.png);
+    background-image: url(../assets/resources/paper-cells.png);
     height: 100%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -609,7 +609,7 @@ a {
       transition: all 0.65s ease-in-out 0.7s; }
   .project-right {
     padding: 3% 6%;
-    background-image: url(/assets/resources/paper-cells.png);
+    background-image: url(../assets/resources/paper-cells.png);
     height: 100%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -638,7 +638,7 @@ a {
         width: 100%;
         top: 29%; }
       .project-right-tamagotchi-timestamp {
-        background-image: url(/assets/resources/time-stamp.png);
+        background-image: url(../assets/resources/time-stamp.png);
         background-size: 100%;
         background-position: center;
         display: flex;
@@ -679,7 +679,7 @@ a {
   align-items: center;
   display: flex;
   flex-direction: column;
-  background-image: url(/assets/resources/background-image-home.png); }
+  background-image: url(../assets/resources/background-image-home.png); }
   .contact-title-holder {
     background-color: white;
     width: 30%;
