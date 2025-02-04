@@ -1054,3 +1054,28 @@ from, to { border-color: transparent }
 }
 
 //media queries
+@media only screen and (max-width: 991px) {
+    .introduction-textbox p {
+        font-size: small;
+    }
+    .experience {
+        font-size: small;
+        &-imagebox--odd {
+            left: -20%;
+        }
+    }
+    .cover-letter-content {
+        font-size: small;
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+    }
+    .contact-title-holder {
+        width: unset;
+        padding: 0 4%;
+        gap: 3%;
+    }
+}

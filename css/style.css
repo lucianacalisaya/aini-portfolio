@@ -817,3 +817,21 @@ a {
   100% {
     transform: scale(1);
     opacity: 1; } }
+
+@media only screen and (max-width: 991px) {
+  .introduction-textbox p {
+    font-size: small; }
+  .experience {
+    font-size: small; }
+    .experience-imagebox--odd {
+      left: -20%; }
+  .cover-letter-content {
+    font-size: small; }
+    .cover-letter-content .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+  .contact-title-holder {
+    width: unset;
+    padding: 0 4%;
+    gap: 3%; } }
