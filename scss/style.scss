@@ -63,7 +63,7 @@ body {
 }
 .title {
     font-weight: bold;
-    font-size: 7vh;
+    font-size: 48px;
     font-family: "Open Sans", serif;
 }
 
@@ -858,9 +858,22 @@ a {
 //cover letter {
 .cover-letter {
     line-height: 22px;
+    .basic-title-holder {
+        height: 7vh;
+        .title {
+            font-size: 48px;
+        }
+    }
     &-content {
         align-items: unset;
         gap: 2%;
+        height: 93vh;
+        .box {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            padding-top: 8px;
+        }
     }
 }
 
@@ -872,14 +885,16 @@ a {
     background-image: url(../assets/resources/background-image-home.png);
     &-title-holder {
         background-color: white;
-        width: 30%;
         margin-top: 2%;
         border-radius: 48px;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
         border: 2px solid black;
         &-typewriter {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0 1rem;
             h3 {
                 overflow: hidden;
                 border-right: .15em solid black;
@@ -910,6 +925,7 @@ a {
         flex-direction: column;
         justify-content: space-around;
         font-size: 20px;
+        text-decoration: none;
         a {
             color: #2652d3;
         }
@@ -1058,8 +1074,9 @@ from, to { border-color: transparent }
     }
     .experience {
         font-size: 12px;
-        &-imagebox--odd {
-            right: 30%;
+        &-translator {
+            height: 15rem;
+            padding: 5rem 1rem 0 1rem;
         }
     }
     .more {
@@ -1120,6 +1137,9 @@ from, to { border-color: transparent }
                 left: 76%;
             }
         }
+    }
+    .project {
+        font-size: 12px;
     }
     .cover-letter-content {
         font-size: 12px;

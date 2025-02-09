@@ -53,7 +53,7 @@ body {
 
 .title {
   font-weight: bold;
-  font-size: 7vh;
+  font-size: 48px;
   font-family: "Open Sans", serif; }
 
 .basic-title-holder {
@@ -670,9 +670,19 @@ a {
 
 .cover-letter {
   line-height: 22px; }
+  .cover-letter .basic-title-holder {
+    height: 7vh; }
+    .cover-letter .basic-title-holder .title {
+      font-size: 48px; }
   .cover-letter-content {
     align-items: unset;
-    gap: 2%; }
+    gap: 2%;
+    height: 93vh; }
+    .cover-letter-content .box {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      padding-top: 8px; }
 
 .contact {
   align-items: center;
@@ -681,18 +691,21 @@ a {
   background-image: url(../assets/resources/background-image-home.png); }
   .contact-title-holder {
     background-color: white;
-    width: 30%;
     margin-top: 2%;
     border-radius: 48px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     border: 2px solid black; }
-    .contact-title-holder-typewriter h3 {
-      overflow: hidden;
-      border-right: .15em solid black;
-      letter-spacing: .12em;
-      /* Adjust as needed */ }
+    .contact-title-holder-typewriter {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0 1rem; }
+      .contact-title-holder-typewriter h3 {
+        overflow: hidden;
+        border-right: .15em solid black;
+        letter-spacing: .12em;
+        /* Adjust as needed */ }
   .contact .typewriter h3.show {
     animation: typing 1.6s steps(16, end), blink-caret 0.75s step-end infinite;
     margin: 0 auto;
@@ -706,7 +719,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    font-size: 20px; }
+    font-size: 20px;
+    text-decoration: none; }
     .contact-socials a {
       color: #2652d3; }
   .contact-message {
@@ -822,8 +836,9 @@ a {
     font-size: 12px; }
   .experience {
     font-size: 12px; }
-    .experience-imagebox--odd {
-      right: 30%; }
+    .experience-translator {
+      height: 15rem;
+      padding: 5rem 1rem 0 1rem; }
   .more-title-content {
     font-size: 2rem; }
   .more-subtitle {
@@ -862,6 +877,8 @@ a {
   .more-right-decoration {
     top: -5%;
     left: 76%; }
+  .project {
+    font-size: 12px; }
   .cover-letter-content {
     font-size: 12px; }
     .cover-letter-content .box {
