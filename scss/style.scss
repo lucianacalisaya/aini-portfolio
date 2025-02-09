@@ -378,7 +378,7 @@ a {
         &--odd {
             position: relative;
             top: -23%;
-            left: -7%;            
+            right: 0%;            
             img {
                 position: absolute;
             }
@@ -448,7 +448,7 @@ a {
         font-family: 'Typewriter';
         padding-left: 11%;
         margin-top: 5%;
-        font-size: 3vw;
+        font-size: 3.4rem;
         margin-bottom: 4%;
     } 
     &-playlists {
@@ -624,12 +624,12 @@ a {
             position: relative;
             &-english {
                 font-family: "Shantell Sans", serif;
-                font-size: 1.1vw;
+                font-size: 16px;
                 margin-bottom: 6%;
             }
             &-korean {
                 font-family: "Gamja Flower", serif;
-                font-size: 1.8vw;
+                font-size: 24px;
             }
         }
         &-decoration {
@@ -1054,18 +1054,77 @@ from, to { border-color: transparent }
 }
 
 //media queries
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1024px) {
     .introduction-textbox p {
-        font-size: small;
+        font-size: 12px;
     }
     .experience {
-        font-size: small;
+        font-size: 12px;
         &-imagebox--odd {
-            left: -20%;
+            right: 30%;
+        }
+    }
+    .more {
+        &-title-content {
+            font-size: 2rem;
+        }
+        &-subtitle {
+            font-size: 1.4rem;
+        }
+        &-playlists-items {
+            font-size: 16px;
+            li img {
+                height: 38px;
+            }
+        }
+        &-hobbies {
+            font-size: 12px;
+        }
+        &-center {
+            position: relative;
+            &-text {
+                line-height: 170%;
+                position: absolute;
+                width: 108%;
+                &-english {
+                    font-size: 12px;
+                }
+                &-korean {
+                    font-size: 16px;
+                }
+            }
+            &-decoration {
+                left: -11%;
+            }
+        }
+        &-right {
+            &-stars {
+                transform: translate(-45%, 20%) rotate(139deg);
+                :first-child:is(div) {
+                    right: 58%;
+                    bottom: 30%;
+                }
+            }
+            &-languages {
+                transform: translate(-10%, -39%) rotate(353deg);
+            }
+            &-content {
+                line-height: 170%;
+                &-english {
+                    font-size: 12px;
+                }
+                &-korean {
+                    font-size: 18px;
+                }
+            }
+            &-decoration {
+                top: -5%;
+                left: 76%;
+            }
         }
     }
     .cover-letter-content {
-        font-size: small;
+        font-size: 12px;
         .box {
             display: flex;
             flex-direction: column;

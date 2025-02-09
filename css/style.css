@@ -295,7 +295,7 @@ a {
     .experience-imagebox--odd {
       position: relative;
       top: -23%;
-      left: -7%; }
+      right: 0%; }
       .experience-imagebox--odd img {
         position: absolute; }
       .experience-imagebox--odd :hover {
@@ -348,7 +348,7 @@ a {
     font-family: 'Typewriter';
     padding-left: 11%;
     margin-top: 5%;
-    font-size: 3vw;
+    font-size: 3.4rem;
     margin-bottom: 4%; }
   .more-playlists {
     background-image: url(../assets/resources/paper-with-clip.png);
@@ -488,11 +488,11 @@ a {
       position: relative; }
       .more-right-content-english {
         font-family: "Shantell Sans", serif;
-        font-size: 1.1vw;
+        font-size: 16px;
         margin-bottom: 6%; }
       .more-right-content-korean {
         font-family: "Gamja Flower", serif;
-        font-size: 1.8vw; }
+        font-size: 24px; }
     .more-right-decoration {
       position: absolute;
       width: 59%;
@@ -818,15 +818,53 @@ a {
     transform: scale(1);
     opacity: 1; } }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1024px) {
   .introduction-textbox p {
-    font-size: small; }
+    font-size: 12px; }
   .experience {
-    font-size: small; }
+    font-size: 12px; }
     .experience-imagebox--odd {
-      left: -20%; }
+      right: 30%; }
+  .more-title-content {
+    font-size: 2rem; }
+  .more-subtitle {
+    font-size: 1.4rem; }
+  .more-playlists-items {
+    font-size: 16px; }
+    .more-playlists-items li img {
+      height: 38px; }
+  .more-hobbies {
+    font-size: 12px; }
+  .more-center {
+    position: relative; }
+    .more-center-text {
+      line-height: 170%;
+      position: absolute;
+      width: 108%; }
+      .more-center-text-english {
+        font-size: 12px; }
+      .more-center-text-korean {
+        font-size: 16px; }
+    .more-center-decoration {
+      left: -11%; }
+  .more-right-stars {
+    transform: translate(-45%, 20%) rotate(139deg); }
+    .more-right-stars :first-child:is(div) {
+      right: 58%;
+      bottom: 30%; }
+  .more-right-languages {
+    transform: translate(-10%, -39%) rotate(353deg); }
+  .more-right-content {
+    line-height: 170%; }
+    .more-right-content-english {
+      font-size: 12px; }
+    .more-right-content-korean {
+      font-size: 18px; }
+  .more-right-decoration {
+    top: -5%;
+    left: 76%; }
   .cover-letter-content {
-    font-size: small; }
+    font-size: 12px; }
     .cover-letter-content .box {
       display: flex;
       flex-direction: column;
