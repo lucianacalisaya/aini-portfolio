@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="./assets/resources/star-jean.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if(isDarkMode){
+          document.write(`<meta name="color-scheme" content="dark Only"><\/meta>`);
+        }
+      </script>
 </head>
 <!--cambiar la a por la estrella-->
 <body>
