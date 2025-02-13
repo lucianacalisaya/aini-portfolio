@@ -505,16 +505,16 @@ a {
   background-image: url(../assets/resources/my-work.png);
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 3%; }
+  padding-top: 3%;
+  overflow-y: hidden; }
   .project-container {
-    display: flex;
     flex-wrap: wrap; }
   .project-left {
     padding: 3% 6%;
     background-image: url(../assets/resources/paper-cells.png);
     height: 100%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center; }
     .project-left-list {
       padding-top: 3%;
@@ -522,10 +522,12 @@ a {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      list-style-type: "★"; }
+      list-style-type: "★";
+      aspect-ratio: 16/9; }
   .project-imagebox {
     height: 50%;
-    position: relative; }
+    position: relative;
+    aspect-ratio: 16/9; }
     .project-imagebox img {
       width: 32%;
       position: absolute;
@@ -607,16 +609,21 @@ a {
     .project-imagebox :nth-child(11).show {
       transition: all 0.65s ease-in-out 0.7s; }
   .project-right {
-    padding: 3% 6%;
+    padding: 1rem 6%;
     background-image: url(../assets/resources/paper-cells.png);
     height: 100%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center; }
     .project-right h3 {
       text-align: center; }
+    .project-right-lyrics {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      justify-content: space-between; }
     .project-right-text {
-      margin: 5% 0; }
+      margin-bottom: 1rem; }
       .project-right-text span {
         display: inline;
         background-repeat: no-repeat;
@@ -669,20 +676,25 @@ a {
     color: #a4aab1; }
 
 .cover-letter {
-  line-height: 22px; }
+  line-height: 20px; }
   .cover-letter .basic-title-holder {
-    height: 8vh; }
+    height: unset; }
     .cover-letter .basic-title-holder .title {
-      font-size: 48px; }
+      font-size: 48px;
+      margin: 1rem; }
+  .cover-letter-box {
+    display: flex;
+    flex-direction: row; }
   .cover-letter-content {
     align-items: unset;
-    gap: 2%;
-    height: 92vh; }
-    .cover-letter-content .box {
+    gap: 1rem;
+    height: 92vh;
+    padding: 0 3rem; }
+    .cover-letter-content-text {
       display: flex;
       flex-direction: column;
-      padding-top: 8px;
-      gap: 1rem; }
+      gap: 1rem;
+      margin-top: 1rem; }
 
 .contact {
   align-items: center;

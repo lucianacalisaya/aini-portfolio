@@ -650,8 +650,8 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 3%;
+    overflow-y: hidden;
     &-container {
-        display: flex;
         flex-wrap: wrap;
     }
     &-left {
@@ -659,7 +659,7 @@ a {
         background-image: url(../assets/resources/paper-cells.png);
         height: 100%;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: center;   
         &-list {
             padding-top: 3%;
@@ -668,11 +668,13 @@ a {
             flex-direction: column;
             justify-content: space-evenly;
             list-style-type: "★";
+            aspect-ratio: 16/9;
         }
     }
     &-imagebox {
         height: 50%;
         position: relative;
+        aspect-ratio: 16/9;
         img {
             width: 32%;
             position: absolute;
@@ -780,17 +782,23 @@ a {
         }
     }
     &-right {
-        padding: 3% 6%;
+        padding: 1rem 6%;
         background-image: url(../assets/resources/paper-cells.png);
         height: 100%;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: center;
         h3 {
             text-align: center;
         }
+        &-lyrics {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            justify-content: space-between;
+        }
         &-text {
-            margin: 5% 0;
+            margin-bottom: 1rem;
             span {
                 display: inline;
                 background-repeat: no-repeat;
@@ -857,22 +865,28 @@ a {
 
 //cover letter {
 .cover-letter {
-    line-height: 22px;
+    line-height: 20px;
     .basic-title-holder {
-        height: 8vh;
+        height: unset;
         .title {
             font-size: 48px;
+            margin: 1rem;
         }
+    }
+    &-box {
+        display: flex;
+        flex-direction: row;
     }
     &-content {
         align-items: unset;
-        gap: 2%;
+        gap: 1rem;
         height: 92vh;
-        .box {
+        padding: 0 3rem;
+        &-text {
             display: flex;
             flex-direction: column;
-            padding-top: 8px;
             gap: 1rem;
+            margin-top: 1rem;
         }
     }
 }
