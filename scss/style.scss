@@ -525,8 +525,7 @@ a {
             line-height: 2rem;
             &-english {
                 font-family: "Shantell Sans", serif;
-                margin-bottom: 13%;
-                :first-child {
+                p {
                     margin-bottom: 4%;
                 }
             }
@@ -605,7 +604,7 @@ a {
                     transform: scale(1) rotate(226deg);                  
             }
         }
-        &-languages {
+        &-text {
             background-image: url(../assets/resources/squared-blue-paper.png);
             background-repeat: no-repeat;
             background-size: contain;
@@ -623,7 +622,7 @@ a {
                 &-english {
                     font-family: "Shantell Sans", serif;
                     font-size: 16px;
-                    margin: 8px;
+                    margin: 18px 0;
                 }
                 &-korean {
                     font-family: "Gamja Flower", serif;
@@ -635,8 +634,8 @@ a {
         &-decoration {
             position: absolute;
             width: 59%;
-            top: -13%;
-            left: 67%;
+            top: -24%;
+            left: 63%;
             transform: rotate(28deg);
             img {
                 width: 100%;
